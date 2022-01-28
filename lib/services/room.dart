@@ -116,7 +116,7 @@ class RoomService {
         .collection('rooms')
         .doc(roomDocId)
         .collection('histories')
-        .orderBy('timestamp', descending: false)
+        .orderBy('timestamp', descending: true)
         .snapshots();
   }
 
